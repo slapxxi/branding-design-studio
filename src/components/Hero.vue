@@ -4,7 +4,7 @@ import { links } from '@/components/hero.config'
 </script>
 
 <template>
-  <div class="col-[full] grid grid-cols-subgrid content-center gap-y-10 overflow-hidden">
+  <div class="col-[full] row-[hero] grid grid-cols-subgrid content-center gap-y-10 overflow-hidden">
     <div class="@container col-[main]">
       <h3 class="text-fluid-32.5 leading-[clamp(4rem,3.75rem+7.5cqi,8.125rem)]">
         Branding & <br />Digital Design <br />
