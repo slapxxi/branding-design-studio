@@ -8,6 +8,7 @@ import svgLoader from 'vite-svg-loader'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [tailwindcss(), svgLoader(), vue(), vueDevTools()],
+  base: '/branding-design-studio/',
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),

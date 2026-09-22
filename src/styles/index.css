@@ -1,1 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 @import 'tailwindcss';
+
+@theme {
+  --font-main: Roboto, sans-serif;
+
+  --color-xred-600: #d80000;
+  --color-xred-700: #c6100f;
+}
+
+@utility text-fluid-sm {
+  font-size: clamp(0.625rem, 0.705rem + 0.23cqi, 0.875rem);
+}
+
+@utility text-fluid-base {
+  font-size: clamp(0.75rem, 0.659rem + 0.45cqi, 1rem);
+}
+
+@utility text-fluid-lg {
+  font-size: clamp(0.75rem, 0.614rem + 0.68cqi, 1.125rem);
+}
+
+@utility text-fluid-xl {
+  font-size: clamp(1rem, 0.909rem + 0.45cqi, 1.25rem);
+}
+
+@utility text-fluid-2xl {
+  font-size: clamp(1rem, 0.818rem + 0.91cqi, 1.5rem);
+}
+
+@utility text-fluid-3xl {
+  font-size: clamp(1.5rem, 1.364rem + 0.68cqi, 1.875rem);
+}
+
+@utility text-fluid-4xl {
+  font-size: clamp(1.5rem, 1.227rem + 1.36cqi, 2.25rem);
+}
+
+@utility text-fluid-5xl {
+  font-size: clamp(2.25rem, 1.977rem + 1.36cqi, 3rem);
+}
+
+@utility text-fluid-7xl {
+  font-size: clamp(3.75rem, 3.477rem + 1.36cqi, 4.5rem);
+}
+
+@utility text-fluid-32.5 {
+  font-size: clamp(4rem, 2.5rem + 7.5cqi, 8.125rem);
+}
