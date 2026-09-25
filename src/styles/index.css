@@ -44,6 +44,7 @@
 
 @utility text-fluid-7xl {
   font-size: clamp(3.75rem, 3.477rem + 1.36cqi, 4.5rem);
+  line-height: clamp(3.75rem, 3.477rem + 1.36cqi, 4.5rem);
 }
 
 @utility text-fluid-32.5 {
