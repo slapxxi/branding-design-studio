@@ -28,11 +28,11 @@ import PlayShowreel from '@/components/PlayShowreel.vue'
     </div>
 
     <div
-      class="col-[main] grid justify-between gap-x-4 gap-y-7 md:max-w-236.25
-        md:grid-cols-[repeat(2,minmax(auto,400px))] md:gap-y-0"
+      class="col-[main] grid justify-between gap-x-4 gap-y-7 justify-self-center
+        md:grid-cols-[fit-content(400px)_minmax(0,145px)_fit-content(428px)] md:gap-y-0"
     >
       <h2 class="font-main text-[80px] leading-22 uppercase">{{ title }}</h2>
-      <div class="grid auto-rows-min gap-y-7.5 self-end">
+      <div class="grid auto-rows-min gap-y-7.5 self-end md:col-3">
         <p class="h">{{ text1 }}</p>
         <p class="h">{{ text2 }}</p>
         <Button class="justify-self-start">Meet the team</Button>

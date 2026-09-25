@@ -13,7 +13,7 @@ const menuOpen = ref(false)
     <Header v-model="menuOpen" class="z-20" />
     <Hero />
     <Menu :open="menuOpen" />
-    <AboutUs />
+    <AboutUs class="mb-40" />
   </div>
 </template>
 
