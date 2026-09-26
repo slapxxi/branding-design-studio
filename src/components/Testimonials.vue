@@ -44,8 +44,8 @@ const handleSwiper = (swiper: SwiperType) => {
       <button
         v-for="(_, index) in testimonials.length"
         :key="index"
-        class="h-full w-full bg-white/20 hover:bg-white/40"
-        :class="{ 'bg-white/100': activeIndex === index }"
+        class="h-full w-full bg-neutral-300 hover:bg-white/40 dark:bg-white/20"
+        :class="{ 'dark:bg-white/100 bg-xred-700': activeIndex === index }"
         @click="swiperInstance?.slideTo(index)"
       />
     </div>

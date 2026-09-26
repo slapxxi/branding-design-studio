@@ -7,14 +7,14 @@ const props = defineProps<{
 </script>
 
 <template>
-  <div class="grid gap-y-4 rounded-lg bg-xgray-900 p-4 pb-9 text-center text-white">
-    <div class="grid   place-items-center bg-xslate-950 text-white" :class="[$style.clip, $style.banner]">
+  <div class="grid gap-y-4 rounded-lg bg-neutral-100 p-4 pb-9 text-center dark:bg-xgray-900 dark:text-white">
+    <div class="grid   place-items-center bg-neutral-200 text-white dark:bg-xslate-950" :class="[$style.clip, $style.banner]">
       <div class="h-full w-full place-self-center rounded bg-xred-700">
       </div>
       <component :is="props.icon" class="max-w-9.5" />
     </div>
 
-    <h3 class="text-fluid-lg uppercase leading-7.5">{{ props.title }}</h3>
+    <h3 class="text-fluid-lg leading-7.5 uppercase">{{ props.title }}</h3>
     <p class="mx-auto max-w-50 text-fluid-lg leading-6">{{ props.description }}</p>
   </div class="">
 </template>

@@ -7,6 +7,7 @@ import Testimonials from '@/components/Testimonials.vue'
 import WeBuild from '@/components/WeBuild.vue'
 import WeWorkWith from '@/components/WeWorkWith.vue'
 import { ref } from 'vue'
+
 const menuOpen = ref(false)
 </script>
 
@@ -18,7 +19,6 @@ const menuOpen = ref(false)
     <WeWorkWith class="mb-40" />
     <WeBuild class="mb-40" />
     <Testimonials class="mb-40" />
-
     <Menu :open="menuOpen" @close="menuOpen = false" />
   </div>
 </template>

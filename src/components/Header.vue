@@ -13,7 +13,7 @@ const toggleMenu = () => {
 
 <template>
   <header
-    class="sticky top-0 row-[header] z-10 col-[full] grid grid-cols-subgrid border-b border-white/15
+    class="sticky top-0 z-10 col-[full] row-[header] grid grid-cols-subgrid border-b border-white/15
       bg-white/60 backdrop-blur-xl dark:bg-black/60"
   >
     <div
@@ -21,11 +21,11 @@ const toggleMenu = () => {
         gap-x-4"
     >
       <div
-        class="grid grid-cols-[minmax(14px,48px)_auto_auto] items-center text-fluid-base uppercase
+        class="grid grid-cols-[minmax(14px,28px)_auto_auto] items-center text-fluid-base uppercase
           md:gap-x-5"
       >
         <div>
-          <Logo class="w-8" />
+          <Logo class="w-full overflow-visible" />
         </div>
         <div class="hidden md:block">
           Branding & <br />
@@ -38,9 +38,9 @@ const toggleMenu = () => {
       </div>
 
       <button
-        class="mx-auto cursor-pointer border-r border-l border-white/15 px-7 py-9.5
-          hover:bg-white/10"
-        :class="{ 'bg-white/20': model }"
+        class="mx-auto cursor-pointer border-r border-l border-black/4 px-7 py-9.5 hover:bg-white/10
+          dark:border-white/15"
+        :class="{ 'bg-white/0': model }"
         @click="toggleMenu"
       >
         <MenuIcon class="w-8.5" :open="model" />

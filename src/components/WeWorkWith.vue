@@ -10,8 +10,8 @@ import { partners, title } from '@/components/weworkwith.config'
     </Title>
 
     <div
-      class="mx-auto grid auto-rows-[54px_62px] place-items-center gap-x-4 gap-y-9
-        md:grid-cols-[repeat(3,minmax(0,240px))]"
+      class="mx-auto grid auto-rows-[54px_62px] place-items-center gap-x-4 gap-y-9 text-neutral-600
+        md:grid-cols-[repeat(3,minmax(0,240px))] dark:text-[initial]"
     >
       <template v-for="partner in partners" :key="partner.id">
         <component v-if="partner.icon" :is="partner.icon" :key="partner.id" class="h-full w-full" />
