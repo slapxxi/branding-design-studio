@@ -2,7 +2,8 @@
 
 <template>
   <button
-    class="rounded bg-xred-700 p-2.5 text-fluid-sm text-white uppercase hover:bg-xred-700/80 active:bg-xred-700"
+    class="rounded bg-xred-700 p-2.5 text-fluid-sm text-white uppercase hover:bg-xred-700/80
+      active:bg-xred-700"
     :class="$style.btn"
   >
     <span class="col-2">

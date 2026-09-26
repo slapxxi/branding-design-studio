@@ -3,9 +3,10 @@ import AboutUs from '@/components/AboutUs.vue'
 import Header from '@/components/Header.vue'
 import Hero from '@/components/Hero.vue'
 import Menu from '@/components/Menu.vue'
+import Testimonials from '@/components/Testimonials.vue'
 import WeBuild from '@/components/WeBuild.vue'
-import { ref } from 'vue'
 import WeWorkWith from '@/components/WeWorkWith.vue'
+import { ref } from 'vue'
 const menuOpen = ref(false)
 </script>
 
@@ -16,6 +17,7 @@ const menuOpen = ref(false)
     <AboutUs class="mb-40" id="about" />
     <WeWorkWith class="mb-40" />
     <WeBuild class="mb-40" />
+    <Testimonials class="mb-40" />
 
     <Menu :open="menuOpen" @close="menuOpen = false" />
   </div>

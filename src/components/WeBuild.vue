@@ -5,10 +5,10 @@ import Card from '@/components/Card.vue'
 </script>
 
 <template>
-  <div class="col-[narrow] grid gap-y-10 md:gap-y-20" id="build">
-    <Title class="max-w-140 text-fluid-7xl uppercase">{{ title }}</Title>
+  <div class="col-[narrow] grid gap-y-10 overflow-hidden md:gap-y-20" id="build">
+    <Title class="max-w-140 text-fluid-5xl uppercase md:text-fluid-7xl">{{ title }}</Title>
 
-    <div class="grid w-full max-w-102 gap-x-2 gap-y-2 md:max-w-[initial] md:grid-cols-3">
+    <div class="grid w-full gap-x-2 gap-y-2 md:max-w-[initial] md:grid-cols-3">
       <Card
         v-for="card in cards"
         :key="card.id"
