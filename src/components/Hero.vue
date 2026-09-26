@@ -1,15 +1,16 @@
 <script setup lang="ts">
 import MouseIcon from '@/assets/mouse-icon.svg'
 import { links } from '@/components/hero.config'
+import Title from '@/components/Title.vue'
 </script>
 
 <template>
   <div class="col-[full] row-[hero] grid grid-cols-subgrid content-center gap-y-10 overflow-hidden">
     <div class="@container col-[main]">
-      <h3 class="text-fluid-32.5 leading-[clamp(4rem,3.75rem+7.5cqi,8.125rem)]">
+      <Title class="text-fluid-32.5">
         Branding & <br />Digital Design <br />
         Studio.
-      </h3>
+      </Title>
     </div>
 
     <div

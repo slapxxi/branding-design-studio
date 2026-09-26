@@ -9,6 +9,10 @@
   --color-xred-600: #d80000;
   --color-xred-700: #c6100f;
 
+  --color-xgray-900: #171924;
+
+  --color-xslate-950: #12141e;
+
   --breakpoint-lg: 960px;
 }
 
@@ -51,4 +55,5 @@
 
 @utility text-fluid-32.5 {
   font-size: clamp(4rem, 2.5rem + 7.5cqi, 8.125rem);
+  line-height: clamp(4rem, 2.5rem + 7.5cqi, 8.125rem);
 }

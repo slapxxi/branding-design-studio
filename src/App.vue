@@ -3,6 +3,7 @@ import AboutUs from '@/components/AboutUs.vue'
 import Header from '@/components/Header.vue'
 import Hero from '@/components/Hero.vue'
 import Menu from '@/components/Menu.vue'
+import WeBuild from '@/components/WeBuild.vue'
 import { ref } from 'vue'
 
 const menuOpen = ref(false)
@@ -13,6 +14,8 @@ const menuOpen = ref(false)
     <Header v-model="menuOpen" class="z-99" id="home" />
     <Hero id="hero" />
     <AboutUs class="mb-40" id="about" />
+    <WeBuild />
+
     <Menu :open="menuOpen" @close="menuOpen = false" />
   </div>
 </template>
