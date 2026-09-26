@@ -8,6 +8,8 @@
 
   --color-xred-600: #d80000;
   --color-xred-700: #c6100f;
+
+  --breakpoint-lg: 960px;
 }
 
 @utility text-fluid-sm {

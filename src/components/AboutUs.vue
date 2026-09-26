@@ -1,23 +1,23 @@
 <script setup lang="ts">
-import ArrowRightIcon from '@/assets/arrow-right-icon.svg'
 import ArrowLeftIcon from '@/assets/arrow-left-icon.svg'
+import ArrowRightIcon from '@/assets/arrow-right-icon.svg'
 import { slides, text1, text2, title } from '@/components/about.config'
 import Button from '@/components/Button.vue'
-import PlayShowreel from '@/components/PlayShowreel.vue'
-import { Swiper, SwiperSlide } from 'swiper/vue'
-import { Navigation } from 'swiper/modules'
 import IconButton from '@/components/IconButton.vue'
+import PlayShowreel from '@/components/PlayShowreel.vue'
+import { Navigation } from 'swiper/modules'
+import { Swiper, SwiperSlide } from 'swiper/vue'
 
 const modules = [Navigation]
 </script>
 
 <template>
   <div class="col-[main/full] grid grid-cols-subgrid gap-y-15">
-    <IconButton class="col-[main] swiper-button-prev">
+    <IconButton class="swiper-button-prev col-[main]">
       <ArrowLeftIcon class="w-full"></ArrowLeftIcon>
     </IconButton>
 
-    <IconButton class="col-[main-end] swiper-button-next">
+    <IconButton class="swiper-button-next col-[main-end]">
       <ArrowRightIcon class="w-full"></ArrowRightIcon>
     </IconButton>
 
@@ -40,8 +40,8 @@ const modules = [Navigation]
     </div>
 
     <div
-      class="col-[main] grid gap-x-4 gap-y-7 justify-self-center
-        md:grid-cols-[minmax(auto,545px)_fit-content(428px)] md:gap-y-0"
+      class="col-[narrow] grid gap-x-4 gap-y-7 md:grid-cols-[minmax(auto,545px)_fit-content(428px)]
+        md:gap-y-0"
     >
       <h2 class="max-w-100 text-fluid-7xl uppercase">
         {{ title }}

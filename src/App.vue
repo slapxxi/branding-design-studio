@@ -18,9 +18,11 @@ const menuOpen = ref(false)
 </template>
 
 <style module>
+/* 1200 - 960 = 240*/
 .wrapper {
   grid-template-columns:
-    [full] minmax(38px, 1fr) [main] minmax(auto, 1200px)
+    [full] minmax(38px, 1fr) [main] min(calc(100vw - 1080px), 120px) [narrow] minmax(auto, 960px)
+    [narrow-end] min(calc(100vw - 1080px), 120px)
     [main-end] minmax(38px, 1fr) [full-end];
   grid-template-rows: [menu header] min-content [header-end hero] 1fr [menu-end hero-end];
 
