@@ -5,7 +5,7 @@ import Hero from '@/components/Hero.vue'
 import Menu from '@/components/Menu.vue'
 import WeBuild from '@/components/WeBuild.vue'
 import { ref } from 'vue'
-
+import WeWorkWith from '@/components/WeWorkWith.vue'
 const menuOpen = ref(false)
 </script>
 
@@ -14,7 +14,8 @@ const menuOpen = ref(false)
     <Header v-model="menuOpen" class="z-99" id="home" />
     <Hero id="hero" />
     <AboutUs class="mb-40" id="about" />
-    <WeBuild />
+    <WeWorkWith class="mb-40" />
+    <WeBuild class="mb-40" />
 
     <Menu :open="menuOpen" @close="menuOpen = false" />
   </div>

@@ -2,7 +2,7 @@
 const props = defineProps<{
   title: string
   description: string
-  icon: string
+  icon: HTMLElement
 }>()
 </script>
 
