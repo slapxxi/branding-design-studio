@@ -1,22 +1,34 @@
 <script setup lang="ts">
 import ArrowRightIcon from '@/assets/arrow-right-icon.svg'
+import ArrowLeftIcon from '@/assets/arrow-left-icon.svg'
 import { slides, text1, text2, title } from '@/components/about.config'
 import Button from '@/components/Button.vue'
 import PlayShowreel from '@/components/PlayShowreel.vue'
 import { Swiper, SwiperSlide } from 'swiper/vue'
+import { Navigation } from 'swiper/modules'
+import IconButton from '@/components/IconButton.vue'
+
+const modules = [Navigation]
 </script>
 
 <template>
   <div class="col-[main/full] grid grid-cols-subgrid gap-y-15">
-    <div
-      class="col-[main-end] inline-grid aspect-square cursor-pointer grid-cols-[minmax(auto,28px)]
-        place-items-center place-self-start bg-neutral-800 p-2 hover:opacity-50"
-    >
+    <IconButton class="col-[main] swiper-button-prev">
+      <ArrowLeftIcon class="w-full"></ArrowLeftIcon>
+    </IconButton>
+
+    <IconButton class="col-[main-end] swiper-button-next">
       <ArrowRightIcon class="w-full"></ArrowRightIcon>
-    </div>
+    </IconButton>
 
     <div class="col-[main/full] row-2 select-none">
-      <Swiper slidesPerView="auto" :spaceBetween="40" wrapperClass="items-center">
+      <Swiper
+        slidesPerView="auto"
+        :spaceBetween="40"
+        :modules="modules"
+        wrapperClass="items-center"
+        :navigation="{ prevEl: '.swiper-button-prev', nextEl: '.swiper-button-next' }"
+      >
         <SwiperSlide v-for="slide in slides" :key="slide.id">
           <img :src="slide.img" :alt="slide.alt" />
         </SwiperSlide>
